@@ -1,0 +1,17 @@
+#1) Faça um Programa que leia uma lista de 5 números inteiros e mostre-os.
+
+print('***Neste programa você digitará uma sequência de cinco números!***\n')
+
+i=0
+sequencia = []
+
+while i<5:
+    print(f"\nDigite o {i+1}º número: ")
+    try:
+        num = float(input())
+        sequencia.append(num)
+        i+=1
+    except:
+        print("\nDigite um número válido!\n")
+
+print(f"\nOs números digitados foram: {sequencia}")
